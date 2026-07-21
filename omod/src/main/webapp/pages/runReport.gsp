@@ -206,6 +206,7 @@ ${ ui.includeFragment("appui", "messages", [ codes: [
                                 label: paramLabel,
                                 initialValue: it.defaultValue ?: sessionContext.sessionLocation,
                                 withTag: it?.widgetConfiguration?.withTag,
+                                defaultIfOnlyOneOption: it?.widgetConfiguration?.defaultIfOnlyOneOption,
                                 classes: ["drop-down-list " + (it.required == true ? "required" : '')]
                         ])}
                     <% } else if (it.type == org.openmrs.EncounterType) { %>
